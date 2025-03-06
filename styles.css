@@ -35,10 +35,24 @@ header{
     z-index: 100%;
 }
 
+nav a{
+    font-size: 20px;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover
+nav a:active{
+    color: red;
+    border-bottom: 3px solid red;
+}
+
 .image{
     text-align: center;
     image-rendering: optimizeQuality;
-    
 }
 .caption {
     display: block;
@@ -50,10 +64,11 @@ h1 {
     top: 20px;
     left: 0;
     background: linear-gradient(to right, rgba(255, 182, 193, 0.7), rgba(128, 128, 128, 0.7)); 
+    /* Soft pink to gray gradient with transparency */
     padding: 10px 20px;
-    border-radius: 0 8px 8px 0; 
+    border-radius: 0 8px 8px 0; /* Only right side rounded */
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds depth */
 }
